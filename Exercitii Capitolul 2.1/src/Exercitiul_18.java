@@ -13,6 +13,7 @@ public class Exercitiul_18 {
 		int numar;
 		int invers = 0;
 		int suma_para = 0;
+		int control = 1;
 		
 	
 		
@@ -34,11 +35,11 @@ public class Exercitiul_18 {
 			// inversarea numarului
 			int cifra = numar % 10;
 			invers = invers * 10 + cifra;
-			numar = numar / 10;
+			numar = numar / 10;         			
 			
-			// adunarea cifrelor pare din numar
-		    suma_para = suma_para + (numar % 10);
-		   
+	     	// adunarea cifrelor pare din numar
+	        suma_para = suma_para + (numar % 10);
+		        
 			
 		}
 		

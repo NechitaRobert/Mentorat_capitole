@@ -1,3 +1,7 @@
+// Scrie un program in JAVA unde userul va scrie un numar la tastatura iar programul
+// ii va spne cate cifre are acel numar. Pe langa numarul de cifre ale acelui numar
+// va trebui sa printezi si suma cifrelor
+
 import java.util.Scanner;
 
 
