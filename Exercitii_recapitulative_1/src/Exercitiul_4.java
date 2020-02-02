@@ -1,3 +1,5 @@
+/*Idem ca exercitiul 4_1 doar ca in loc de array unidimensional avem o matrice
+ */
 
 import java.util.Scanner;
 
@@ -5,15 +7,19 @@ public class Exercitiul_4 {
 
 	public static void main(String args[])
 	{
+		// creearea variabilei matrice 
 		int matrice[][] = new int[2][5];
+		// creearea radului
 		int rand = matrice.length;
 		System.out.println(rand);
+		// creearea coloanelor
 		int coloana = matrice[0].length;
 		System.out.println(coloana);
 		
+		// creearea scanerului
 		Scanner valoriTastatura = new Scanner(System.in);
 		
-			
+		// citirea si implementarea valorilor in matrice
 		for (int i = 0; i < rand; i++)
 		{
 			for (int j = 0; j < coloana; j++)
@@ -24,6 +30,7 @@ public class Exercitiul_4 {
 			System.out.println();
 		}
 		
+		// afisarea matricei
 		for (int i = 0; i < rand; i++)
 		{
 			for(int j = 0; j < coloana; j++)
@@ -32,21 +39,24 @@ public class Exercitiul_4 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 		
-		// nota fa pe foaie cu coordonatele
+		// creearea unei noi matrici pt stocarea valorilor inversate
 		int matriceInversa[][] = new int[rand][coloana];
 		
-		for (int i = rand - 1 ; rand >= 0; i -- )
+		// schimbul ordinei valorilor
+		// ex : prima valoare va deveni ultima valoare
+		for (int i = 0; i < rand; i ++ )
 		{
-			for (int j = coloana - 1 ; coloana >= 0; j-- )
+			for (int j = 0 ; j < coloana ; j++ )
 			{
-				matriceInversa[rand-1-i][coloana-1-j] = matrice[i][j];
+				matriceInversa[i][j] = matrice[rand-i-1][coloana-j-1];
 				
 			}
 
 		}
 		
-		
+		// afisarea matricei inversate
 		for (int i = 0; i < rand; i++)
 		{
 			for (int j = 0; j < coloana; j++)
