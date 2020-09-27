@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.ArrayList;
 
 public class CursLimbiStraine extends Curs {
@@ -24,4 +25,25 @@ public class CursLimbiStraine extends Curs {
 	void stergeCurs(int index) {
 		cursuriLStraine.remove(index);
 	};
+=======
+
+public class CursLimbiStraine extends Curs {
+
+	
+	public CursLimbiStraine() {};
+	public CursLimbiStraine(int id, String denumire, double pret, int tipCurs) {
+		super(id,denumire,pret, tipCurs);	
+		
+	}
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+>>>>>>> ede2816... actualizare
 }

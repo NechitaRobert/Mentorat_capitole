@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.ArrayList;
 
 public class CursProgramare extends Curs {
@@ -33,5 +34,22 @@ public class CursProgramare extends Curs {
 	}
 	
 	
+=======
+
+public class CursProgramare extends Curs {
+
+	
+	
+	public CursProgramare() {};
+	public CursProgramare(int id, String denumire, double pret, int tipCurs) {
+		super(id,denumire,pret, tipCurs);
+		
+	}
+	
+	
+	
+
+	
+>>>>>>> ede2816... actualizare
 	
 }

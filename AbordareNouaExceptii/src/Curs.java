@@ -5,6 +5,7 @@ public abstract class Curs {
 	protected int id;
 	protected String denumire;
 	protected double pret;
+<<<<<<< HEAD
 	
 	public Curs() {};
 	public Curs(int id, String denumire, double pret) {
@@ -35,6 +36,43 @@ public abstract class Curs {
 	private void setPret(double pret) {
 		this.pret = pret;
 	}
+=======
+	private int tipCurs;
+	
+	public Curs() {};
+	public Curs(int id, String denumire, double pret, int tipCurs) {
+		this.denumire = denumire;
+		this.id = id;
+		this.pret = pret;
+		this.tipCurs = tipCurs;
+	}
+	
+	protected int getId() {
+		return id;
+	}
+	protected void setId(int id) {
+		this.id = id;
+	}
+	protected String getDenumire() {
+		return denumire;
+	}
+	protected void setDenumire(String denumire) {
+		this.denumire = denumire;
+	}
+	protected double getPret() {
+		return pret;
+	}
+	protected void setPret(double pret) {
+		this.pret = pret;
+	}
+	
+	public int getTipCurs() {
+		return tipCurs;
+	}
+	public void setTipCurs(int tipCurs) {
+		this.tipCurs = tipCurs;
+	}
+>>>>>>> ede2816... actualizare
 	@Override
 	public String toString() {
 		return "Curs [id=" + id + ", denumire=" + denumire + ", pret=" + pret + "]";
